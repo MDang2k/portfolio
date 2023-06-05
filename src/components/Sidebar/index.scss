@@ -1,5 +1,6 @@
+@import '/src/App.scss';
 .nav-bar {
-    background: #181818;
+    background: $secondary-color;
     width: 60px;
     height: 100%;
     position: absolute;
@@ -9,6 +10,11 @@
     .logo {
         display: block;
         padding: 8px 0;
+        margin: 0 auto;
+        img {
+            margin-left: 10px;
+            width: 50px;
+        }
     }
     img {
         display: block;
@@ -29,7 +35,7 @@
         width: 100%;
         a {
             font-size: 22px;
-            color: #4d4d4e;
+            color: $button-secondary-color;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -39,7 +45,7 @@
                 transition: all 0.3s ease-out;
             }
             &:hover {
-                color: #ffd700;
+                color: $text-color;
                 svg {
                     opacity: 0;
                 }
@@ -64,20 +70,25 @@
                     content: "HOME";
                 }
             }
-            a.about-link {
-                &:after {
-                    content: "ABOUT";
-                }
+        }
+        a.about-link {
+            &:after {
+                content: "ABOUT";
             }
-            a.contact-link {
-                &:after {
-                    content: "CONTACT";
-                }
+        }
+        a.contact-link {
+            &:after {
+                content: "CONTACT";
             }
-            a.active {
-                svg {
-                    color: #ffd700;
-                }
+        }
+        a.works-link {
+            &:after {
+                content: "WORKS";
+            }
+        }
+        a.active {
+            svg {
+                color: $button-primary-color;
             }
         }
     }
@@ -97,7 +108,7 @@
                 font-size: 15px;
                 line-height: 16px;
                 &:hover svg {
-                    color: #ffd700;
+                    color: $text-color;
                 }
             }
         }
