@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import "./index.scss"
-import LogoTitle from "../../assets/images/logo-s.png"
 import { Link } from "react-router-dom"
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters"
 import Logo from "./Logo/Logo"
